@@ -1,0 +1,454 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "ariel";
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    background-color: #bbb09e;
+    font-family: 'Roboto Condensed', sans-serif;
+
+}
+img{
+    width: 100%;
+}
+header{
+    width: 80%;
+    height: 50px;
+    background-color: #688c68;;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 40px;
+    border-radius: 0 0 10px 10px;
+    margin: 0 auto;
+    align-items: center;
+    text-decoration: none;
+}
+.Navigation{
+    width: auto;
+    display: flex;
+    text-decoration: none;
+}
+.Navigation h1{
+    padding-right: 240px;
+    font-size: 40px;
+    color:#2f586a;
+}
+.logo {
+    width:200px;
+    margin-top: 8px;
+}
+nav .logo{
+    display: none;
+}
+nav ul{
+    display: flex;
+    text-decoration: none;
+}
+nav ul li a {
+    color:#212526;
+    display: block;
+    margin: 0 2px;
+    font-weight: 600;
+    padding: 8px 18px;
+    transition: 0.2s;
+    border-radius: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    
+
+}
+nav ul li a:hover {
+    background: #d5bf6a;
+    color: white;
+    text-decoration: none;
+
+}
+nav ul li a.active {
+    background: #d5bf6a;
+    color: #0b0c10;
+    text-decoration: none;
+}
+.hamburger{
+    display: none;
+    height: fit-content;        
+    cursor: pointer;
+    padding: 3px 8px;
+    border-radius: 5px;
+    transition: 0.2s;
+}
+.hamburger:hover{
+    background: #66fcf1;
+}
+.hamburger div{
+    width: 30px;
+    height: 2px;   
+    margin: 6px 0;
+    background: #212526;
+}
+@media only screen and (max-width: 900px){
+header{
+    width: 90%;
+    padding: 0 20px;
+
+}
+nav{
+    position: absolute;
+    left: -300px;
+    top: 0;
+    z-index: 999;
+    width: 280px;
+    height: 100vh;
+    background: #688c68;
+    transition: 0.2s;
+    box shadow: 2px 0 20px 0 rgba(0,0,0,0.5);
+}
+#nav_check:checked ~ nav {
+    left:0;
+
+}
+
+nav .logo{
+    display: block;
+    height: 70px;
+    display: flex;  
+    align-items: center;
+    margin-left: 30px;
+} 
+nav h1{
+    display: none;
+}
+nav ul li a{
+    margin-bottom: 5px;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+nav ul{
+    display:block;
+    padding: 0 20px;
+    margin-top: 30px;
+}
+
+.hamburger{
+    display: block;
+
+}
+}
+.dropbtn {
+    background-color: #688c68;
+    color: black;
+    padding: 8px 18px; 
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s;
+    border-radius: 30px;
+    font-family: Arial, Helvetica, sans-serif; 
+    text-decoration: none;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #d5bf6a;
+    color: white;
+    text-decoration: none; 
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #1f2833;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #c5c6c7;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.show {
+    display: block;
+}
+.main-body{
+    padding-left: 20px;
+    
+}
+.main-body h1{
+    font-size: 40px;
+    padding-left: 20px;
+    color:#2f586a ;
+}
+
+.index-image{
+    display: flex ;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.index-image img{
+    width: 600px;
+    height: 400px;
+}
+.index-image2{
+    display: flex ;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.index-image2 img{
+    width: 600px;
+    height: 400px;
+}
+.container {
+    background-color: #bbb09e;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
+    overflow: hidden;
+}
+
+.content-item {
+    background-color: #8dae67;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    padding: 20px; 
+    transition: box-shadow 0.2s; 
+}
+.content-item p {
+    font-size: 20px;
+    color: #fff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 800px;
+}
+
+.content-item:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.content-item img {
+    width: 30%;
+    height: 1000px;
+    float: right;
+    margin: 0 0 10px 20px;
+    border-radius: 10px;
+}
+
+.content-item p {
+    text-align: left;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+   
+   .container {
+     position: relative;
+    width: 100%;
+   }
+   
+   .text {
+    padding: 20px;
+    float: left;
+    width: 60%;
+   }
+   
+   .image-collage {
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40%;
+    height: 100%;
+   }
+   
+   .image-collage img {
+    flex: 1 1 50%;
+    height: auto;
+    object-fit: cover;
+   }
+   .card {
+    justify-content: center;
+    align-content: center;
+    width: 24rem;
+    display: inline-block;
+    margin-left: 190px;
+    box-shadow: 0px 0px 5px black;
+  }
+  .box {
+    align-items: center;
+    background-color: #688c68;  
+    border-radius: 10px;
+    box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
+    color: #fff;
+    display: flex;
+    height: 1000px;
+    justify-content: center;
+    margin: 10px;
+    width: 1500px;
+  }
+  
+  .box h2 {
+    font-size: 45;
+  } 
+  .box img{
+    height: 1000px;
+    width: 800px;
+    padding-right: 20px;
+  }
+
+  .box p{
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    
+  }
+  .hiddenItem {
+    transform: translateX(400%);
+    transition: transform 3s ease;
+  }
+  
+  .hiddenItem:nth-of-type(even) {
+    transform: translateX(-400%);
+  }
+  
+  .hiddenItem.show {
+    transform: translateX(0);
+  }
+  .content-container {
+    display: flex;
+    width: 80%;
+    background-color: #316a34;
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 30px; 
+    padding: 20px; 
+    overflow: hidden; 
+    margin-top: 7.5px;
+    margin-bottom: 7.5px;
+  }
+  
+  .content-text {
+    flex: 1;
+    text-align: justify; 
+  }
+  
+  .content-text p { 
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #fff;
+    font-weight: 600;
+    font-size: 20px;
+  }
+  
+  .content-image {
+    width: 200px; 
+    height: 200px; 
+    border-radius: 50%; 
+    overflow: hidden; 
+    margin-left: 15px; 
+    border: 2px #000 solid; 
+  }
+  
+  .content-image img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+  }  
+  
+  .content-right-container {
+    width: 75%;
+    float: right; 
+    background-color: #316a34;
+    border-bottom-left-radius: 30px;
+    border-top-left-radius: 30px; 
+    padding: 20px; /* Adjust padding as needed */
+    overflow: hidden;
+    margin-top: 7.5px;
+    margin-bottom: 7.5px; 
+  }
+  
+  .content-right-text p { 
+    font-family: 'Roboto Condensed', sans-serif;  
+    color: #fff;
+    font-weight: 600;
+    font-size: 20px;
+  }
+  
+  .content-right-container {
+    display: flex;
+    width: 80%;
+    background-color: #316a34;
+    border-bottom-left-radius: 30px; /* Change to bottom-left */
+    border-top-left-radius: 30px; /* Change to top-left */
+    padding: 20px; /* Adjust padding as needed */
+    overflow: hidden; 
+    margin-top: 7.5px;
+    margin-bottom: 15px;
+    float: right; /* Align container to the right */
+  }
+  
+  .content-right-text {
+    flex: 1;
+    text-align: justify; /* Align text to the right */
+  }
+  
+  .content-right-text h2 { 
+    color: #bbb09e; 
+    font-weight: bold; 
+    font-size: 30px; 
+    text-align: right; 
+    margin-bottom: 15px; 
+  }
+  
+  .content-right-image {
+    width: 200px; /* Adjust width of the image */
+    height: 200px; /* Adjust height of the image */
+    border-radius: 50%; /* Make the image circular */
+    overflow: hidden; /* Ensure the circular shape is maintained */
+    margin-right: 15px; /* Adjust margin to move image to the left */
+    border: 2px #000 solid; 
+  }
+  
+  .content-right-image img {
+    width: 100%; /* Make sure the image fills the container */
+    height: 100%; /* Make sure the image fills the container */
+    object-fit: cover; /* Maintain aspect ratio and cover container */
+  }
+  
+  .content-text h2 {
+    color: #bbb09e;
+    font-weight: bold; 
+    font-size: 30px;
+    margin-bottom: 15px; 
+  } 
+  
+  .content-right-container .content-text { 
+    float: right;
+    width: 100%; 
+  }
+  
+  .content-container .content-text {
+    float: left;
+    width: 100%; /* Take up the entire width */
+  }  
